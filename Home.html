@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <!-- BIT607 Assignment 2: Patricia Lai -  4351096 -->
+    <head>
+        <title>Haukai Restaurant Home</title>
+        <link href='https://fonts.googleapis.com/css?family=Limelight' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Mate SC' rel='stylesheet'>
+        <link rel='stylesheet' type='text/css' href='./styles/banner.css'>
+        <link rel='stylesheet' type='text/css' href='./styles/slideshow2.css'>
+              
+    </head>
+ 
+    <body>
+
+        <div class="header">    <!-- Navigation Bar -->    
+            <ul class="header">
+                <li><a href='./Home.html'>Home</a></li>
+                <li><a href='Menu.html'>Menu</a></li>
+                <li><a href='Reservations.html'>Reservations</a></li>
+                <li><a href='Contact.html'>Contact Us</a></li>
+                <li><a href='url'>About Us</a></li>
+                <li><a href='url'>Staff</a></li>
+            </ul>  
+        </div>
+        
+        <div id="brand">
+            <h1>Haukai Restaurant</h1>
+            <img src="Images/shell.png">
+
+
+            <!-- <a href="https://www.freepik.com/vectors/icon">Icon vector created by rawpixel.com - www.freepik.com</a>  -->
+        </div>
+        
+        <div class="slideshow-container" id="home-slide"> <!-- Slideshow Display -->
+            <!-- Photo slides -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="Images/tauranga-bay_1920.jpg" alt="[Comment]">
+              <div class="text">[Text]</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="./Picture2.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="./Picture3.jpg" style="width:100%">
+              <div class="text"></div>
+            </div>
+
+            <!-- Arrow Keys -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            <!-- Dots corresponding to the number of photos -->
+            <div style="text-align:center"> 
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+        </div>
+
+        <div class="home_greeting">
+
+            <p>[Greetings!] </p><p>[Introduction]</p>
+            <p>[Opening Hours]</p>
+            <div class="buttonA" name="menu_button">Menu</div>
+        </div>
+        
+        <hr>
+        
+
+       
+        
+        <div class="footer">    <!-- Footer -->
+            <p>
+                Address:<br>
+                1 Island Street<br>
+                Kerikeri<br>
+                Bay of Islands
+            </p>
+            <p>
+            Contact:<br>
+            Sally Sharp<br>
+            (00)1234 1122
+            </p>
+            <p>
+            Cancellation Policy:<br>
+            Free if cancelled at least one week prior to stay.<br>
+            Receive a 50% refund after that.<br>
+            No refund 48 hours before date of stay.
+            </p>
+            <p><a href="url">Terms and Conditions</a></p>
+        </div>
+        
+        <script src="slideshow2.js"></script>
+    </body>
+    
+    
+ 
+</html>
