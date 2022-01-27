@@ -1,23 +1,16 @@
 body {
-  /* Photo by Ithalu Dominguez from Pexels */
-  /*
-  background-image: url('../Images/pexels-ithalu-dominguez-907485.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  */
   background-color: gainsboro;
 }
 /* #### HOME PAGE ####*/
 /* Header */
 
 /* Page Title Heading */
-#brand h1 {
+h1 {
 font-family: 'Limelight';
 display: block;
 font-size: 2em;
 margin-top: 0.67em;
-margin-bottom: 0.67em;
+margin-bottom: 0.5em;
 margin-left: 0;
 margin-right: 0;
 font-weight: bold;
@@ -33,13 +26,13 @@ text-align: center;
 }
 
 /* Sub-title heading */
-.header {
+.topnav {
     font-family: 'Times New Roman', Times, serif;
     padding: 45px;
     text-align: center;
     background: #78949c;
     color: white;
-    font-size: 30px;
+    font-size: 2em;
     width: 100%;
     overflow: auto;
   }
@@ -55,15 +48,16 @@ text-align: center;
 }
 
 /* Footer text */
-.footer p {
+.footer .footer-main div {
   float: left;
   color: white;
   padding: 15px 16px;
   text-decoration: none;
   font-size: 17px;
+  width: 33.33%;
 }
 
-.footer p a {
+.footer p a, .footer li a {
   color: white;
 }
 
@@ -78,11 +72,11 @@ ul.header {
 
 .header > li {
   float: left;
-  width: 16.66%;
+  width: 25%;
 }
 
 /* Navigation bar button text/font */
-li a {
+.topnav li a {
   display: block;
   color: white;
   text-align: center;
@@ -90,12 +84,16 @@ li a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .navbar a {
     float: none;
     display: block;
     width: 100%;
     text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+
+  ul.header {
+    font-size: 16px;
   }
 }
 
@@ -105,7 +103,7 @@ li a:hover {
 }
 
 /*Home - Greeting */
-.home_greeting {
+.home-greeting {
   text-align: center;
 }
 
@@ -183,7 +181,7 @@ li a:hover {
 
 #home-slide {
   max-width: 100%;
-  height: 500px;
+  height: 32.5vw;
   position: relative;
   
   margin: auto;
@@ -191,9 +189,9 @@ li a:hover {
 
 .mySlides img {
   width: 100%;
-  height: 500px;
+  height: 100%;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 32.5vw;
   object-fit: cover;
 }
 
@@ -241,15 +239,6 @@ li a:hover {
   text-align: center;
 }
 
-/* Number text (1/6 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -284,11 +273,142 @@ li a:hover {
   to {opacity: 1}
 }
 
+/* #### MENU PAGE #### */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+.menu {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.menu-group-heading {
+  margin: 0;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #ccc;
+}
+
+.menu-page-intro {
+  font-size: 20px;
+  text-align: center;
+}
+
+.menu-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item-image {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+.menu-item-text {
+  flex-grow: 1;
+}
+
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item-name {
+  margin-right: 1.5em;
+}
+
+.menu-item-description {
+  line-height: 1.6;
+}
+
+.footer-attribution{
+  clear: both;
+}
+
+.footer .footer-attribution p{
+  position: relative;
+  font-size: 1vw;
+  color: white;
+  text-align: left;
+}
+
+.footer .footer-attribution h4 {
+  font-size: 1.2vw;
+  text-align: left;
+  color: white;
+}
+
+
+@media screen and (min-width: 992px) {
+  .menu {
+    font-size: 16px;
+  }
+
+  .menu-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-item-image {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+/* #### RESERVERATIONS PAGE #### */
+.row-form {
+  margin: 0.5em;
+  position: relative;
+  float: right;
+  width: 45%;
+}
+
+.googleCalendar{
+  float: left;
+  position: relative;
+  height: 0;
+  width: 50%;
+  padding-bottom: 50%;
+  margin: 0.5em;
+}
+
+.googleCalendar iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .row-form {
+    width: 100%;
+  }
+  
+  .googleCalendar{
+    position: relative;
+    height: 0;
+    width: 98%;
+    padding-bottom: 50%;
+  }
+}
+
 /* #### CONTACT PAGE #### */
 #contact-form {
   
   float: left;
-  margin: 0, auto;
+  margin: 0 auto;
   padding: 1.5em;
 }
 
@@ -296,6 +416,18 @@ li a:hover {
   float: right;
   background-color: lightgray;
   text-align: left;
-  margin: 0, auto;
+  margin: 0 auto;
   padding: 1.5em;
+}
+
+@media screen and (max-width: 800px) {
+#contact-form, #contact-info {
+    float: none;
+  }
+}
+
+/* ##### PRIVACY STATEMENT ###### */
+
+.statement {
+  font-size: 18px;
 }
