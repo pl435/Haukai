@@ -4,11 +4,15 @@ body {
 /* #### HOME PAGE ####*/
 /* Header */
 
+#brand {
+  width: 100%;
+}
+
 /* Page Title Heading */
 h1 {
 font-family: 'Limelight';
 display: block;
-font-size: 2em;
+font-size: 3.8vw;
 margin-top: 0.67em;
 margin-bottom: 0.5em;
 margin-left: 0;
@@ -21,14 +25,14 @@ text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 150px; 
-  height: 150px;
+  width: 10vw; 
+  height: 10vw;
 }
 
 /* Sub-title heading */
 .topnav {
     font-family: 'Times New Roman', Times, serif;
-    padding: 45px;
+    padding: 30px;
     text-align: center;
     background: #78949c;
     color: white;
@@ -227,18 +231,6 @@ li a:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  background: rgba(244, 164, 96, 0.5);
-  font-size: 20px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width:fit-content;
-  text-align: center;
-}
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -405,6 +397,10 @@ li a:hover {
 }
 
 /* #### CONTACT PAGE #### */
+#about-location p {
+  text-align: center;
+}
+
 #contact-form {
   
   float: left;
